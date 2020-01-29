@@ -1,0 +1,90 @@
+<ul class="alert alert-danger" *ngIf="errors?.length > 0">
+  <li *ngFor="let err of errors">
+      {{ err }}
+  </li>
+</ul>
+
+<div class="card bg-dark text-white">
+  <div class="card-header">{{ tittle }}</div>
+  <div class="card-body">
+      <form #productForm="ngForm">
+          <div class="form-group row">
+              <label for="name" class="col-form-label col-sm-2">Nombre</label>
+              <div class="col-sm-6">
+                  <input type="text" class="form-control" [(ngModel)]="product.name" name="name" #name="ngModel" required />
+                  <!-- required -->
+                  <div class="alert alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                      <div *ngIf="name.errors.required">
+                          Nombre es requerido
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="price" class="col-form-label col-sm-2">Precio</label>
+              <div class="col-sm-6">
+                  <input type="number" min="0" pattern="^[0-9]+" class="form-control" [(ngModel)]="product.price" name="price" #price="ngModel" required />
+                  <!-- required -->
+                  <div class="alert alert-danger" *ngIf="price.invalid && (price.dirty || price.touched)">
+                      <div *ngIf="price.errors.required">
+                          Precio es requerido/Precio igual o mayor que 0
+                      </div>
+                      <div *ngIf="price.errors.pattern">
+                          No numeros negativos
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="quantity" class="col-form-label col-sm-2">Cantidad</label>
+              <div class="col-sm-6">
+                  <input type="number" min="0" pattern="^[0-9]+" class="form-control" [(ngModel)]="product.quantity" name="quantity" #quantity="ngModel" required />
+                  <!-- required -->
+                  <div class="alert alert-danger"  *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)">
+                      <div *ngIf="quantity.errors.required">
+                          Cantidad es requerida/Cantidad igual o mayor que 0
+                      </div>
+                      <div *ngIf="quantity.errors.pattern">
+                        No numeros negativos
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="categoria" class="col-form-label col-sm-2">Categoria</label>
+              <div class="col-sm-6">
+                  <select class="form-control" id="category" [(ngModel)]="product.category" name="category" #category="ngModel" required>
+                      <option>Marvel</option>
+                      <option>DC</option>
+                      <option value="Other">Otro</option>
+                  </select>
+                  <div class="form-group row" *ngIf="product.category == 'Other'">
+                      <label for="name">Ingresa categoria:</label>
+                      <input type="text" class="form-control" id="categoryTemporal" [(ngModel)]="product.categoryTemporal" name="categoryTemporal" #categoryTemporal="ngModel" required>
+                  </div>
+                  <div class="alert alert-danger" *ngIf="category.invalid && (category.dirty || category.touched)">
+                      <div *ngIf="category.errors.required">
+                          Categoria es requerida
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <div class="col-sm-6">
+                  <button class="btn btn-primary" role="button" (click)="changeCategory();create()" [disabled]="!productForm.valid" *ngIf="!product.id; else elseBlock" ng-disabled="!productForm.form.valid">
+                      Crear
+                  </button>
+                  <ng-template #elseBlock>
+                      <button class="btn btn-primary" role="button" (click)="changeCategory();update();" [disabled]="!productForm.valid" ng-disabled="!productForm.form.valid">
+                          Cambiar inventario
+                      </button>
+                  </ng-template>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
