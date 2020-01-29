@@ -4,39 +4,40 @@ Created by : Jaime Mejia
 */
 
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.InterfaceProductRepository;
+import co.com.cidenet.hulkstore.exception.ResourceNotFoundException;
+import co.com.cidenet.hulkstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
-public class ProductServiceImplement implements InterfaceProductService {
+public class ProductServiceImplement implements ProductService {
 
     @Autowired
-    private InterfaceProductRepository productDao;
+    private ProductRepository productRepository;
 
-    @Override
-    @Transactional(readOnly = true)
-    public List<Product> findAll() {
-        return (List<Product>) productDao.findAll();
+    public ProductServiceImplement(ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
 
     @Override
-    @Transactional
+    public Iterable<Product> findAll() {
+        return productRepository.findAll();
+    }
+
+    @Override
     public Product save(Product product) {
-        return productDao.save(product);
+        return productRepository.save(product);
     }
 
     @Override
-    @Transactional(readOnly = true)
-    public Product findOne(Long id) {
-        return productDao.findById(id).orElse(null);
+    public Product getProduct(long id) {
+        return productRepository
+                .findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("El producto no ha sido encontrado"));
     }
 
     @Override
     public void deleteProduct(Long id) {
-        productDao.deleteById(id);
+        productRepository.deleteById(id);
     }
 }

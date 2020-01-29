@@ -3,7 +3,7 @@ package com.co.cidenet.hulkstore;
 import co.com.cidenet.hulkstore.entity.ItemOrder;
 import co.com.cidenet.hulkstore.entity.Order;
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.InterfaceOrderRepository;
+import co.com.cidenet.hulkstore.repository.OrderRepository;
 import co.com.cidenet.hulkstore.service.OrderServiceImplement;
 
 import org.junit.Before;
@@ -27,7 +27,7 @@ public class OrderTest {
     private Order heroDtoFinal;
 
     @Mock
-    InterfaceOrderRepository orderRepository;
+    OrderRepository orderRepository;
 
     @InjectMocks
     OrderServiceImplement orderService;
