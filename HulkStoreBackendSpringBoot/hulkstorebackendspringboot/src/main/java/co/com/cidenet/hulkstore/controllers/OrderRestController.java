@@ -17,7 +17,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
@@ -92,14 +91,13 @@ public class OrderRestController {
         Order newOrder;
         Map<String, Object> response = new HashMap<>();
         if (result.hasErrors()) {
-            List<String> errors = result.getFieldErrors()
-                    .stream()
-                    .map(err -> "El campo '" + err.getField() + "' " + err.getDefaultMessage())
-                    .collect(Collectors.toList());
-            response.put(Constans.ERROR, errors);
+            response.put(Constans.ERROR, orderService.listErrors(result));
+            logger.error(response);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
             try {
-                newOrder = orderService.saveOrder(order);
+                 newOrder = orderService.saveOrder(order);
+                 orderService.updateQuantityProduct(order);
             } catch (DataAccessException e) {
                 response.put(Constans.MESSAGE,Constans.MSG_ERROR_DATABASE);
                 response.put(Constans.ERROR, Objects.requireNonNull(e.getMessage()).concat(": ").concat(e.getMostSpecificCause().getMessage()));

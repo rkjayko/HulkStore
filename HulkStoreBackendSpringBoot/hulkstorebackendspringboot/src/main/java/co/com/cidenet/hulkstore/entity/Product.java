@@ -27,7 +27,7 @@ public class Product implements Serializable {
     private Integer price;
 
     @NotNull(message = "no puede estar vacio")
-    @Min(value = 0L, message = "El numero debe de ser positivo")
+    //@Min(value = 0L, message = "El numero debe de ser positivo")
     private Integer quantity;
 
     @NotEmpty(message = "no puede estar vacio")

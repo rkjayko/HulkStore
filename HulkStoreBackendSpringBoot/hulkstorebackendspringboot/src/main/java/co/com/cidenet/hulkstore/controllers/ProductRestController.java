@@ -16,7 +16,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 /*
 Created by : Jaime Mejia
@@ -79,11 +78,7 @@ public class ProductRestController {
         Product newProduct;
         Map<String, Object> response = new HashMap<>();
         if (result.hasErrors()) {
-            List<String> errors = result.getFieldErrors()
-                    .stream()
-                    .map(err -> "El campo '" + err.getField() + "' " + err.getDefaultMessage())
-                    .collect(Collectors.toList());
-            response.put(Constans.ERROR, errors);
+            response.put(Constans.ERROR, productService.listErrors(result));
             logger.error(response);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
@@ -108,11 +103,7 @@ public class ProductRestController {
         Product productUpdated;
         Map<String, Object> response = new HashMap<>();
         if (result.hasErrors()) {
-            List<String> errors = result.getFieldErrors()
-                    .stream()
-                    .map(err -> "El campo '" + err.getField() + "' " + err.getDefaultMessage())
-                    .collect(Collectors.toList());
-            response.put(Constans.ERROR, errors);
+            response.put(Constans.ERROR, productService.listErrors(result));
             logger.error(response);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
@@ -123,11 +114,7 @@ public class ProductRestController {
             return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         }
         try {
-            if (oldProduct.getQuantity() + product.getQuantity() >= 0) {
-                oldProduct.setName(product.getName());
-                oldProduct.setPrice(product.getPrice());
-                oldProduct.setQuantity(oldProduct.getQuantity() + product.getQuantity());
-                oldProduct.setCategory(product.getCategory());
+            if (productService.validateQuantity(oldProduct,product)) {
             } else {
                 response.put(Constans.ERROR, "No hay suficiente stock en el inventario");
                 logger.error(response);
