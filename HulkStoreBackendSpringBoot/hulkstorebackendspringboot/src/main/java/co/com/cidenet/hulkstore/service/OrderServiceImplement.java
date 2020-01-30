@@ -2,8 +2,8 @@ package co.com.cidenet.hulkstore.service;
 
 import co.com.cidenet.hulkstore.entity.Order;
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.OrderRepository;
-import co.com.cidenet.hulkstore.repository.ProductRepository;
+import co.com.cidenet.hulkstore.repository.InterfaceOrderRepository;
+import co.com.cidenet.hulkstore.repository.InterfaceProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,12 +11,12 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class OrderServiceImplement implements OrderService {
+public class OrderServiceImplement implements InterfaceOrderService {
     @Autowired
-    private OrderRepository orderDao;
+    private InterfaceOrderRepository orderDao;
 
     @Autowired
-    private ProductRepository productDao;
+    private InterfaceProductRepository productDao;
 
     @Override
     @Transactional(readOnly = true)

@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.ProductRepository;
+import co.com.cidenet.hulkstore.repository.InterfaceProductRepository;
 import co.com.cidenet.hulkstore.service.ProductServiceImplement;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import java.util.Optional;
 public class ProductoTest {
 
     @Mock
-    ProductRepository productRepository;
+    InterfaceProductRepository productRepository;
 
     @InjectMocks
     ProductServiceImplement productService;
@@ -43,7 +43,7 @@ public class ProductoTest {
         productSaved.setName("nuevo producto");
         productSaved.setId(1L);
         when(productRepository.findById(product.getId())).thenReturn(Optional.of(productSaved));
-        Product productFinal = productService.getProduct(product.getId());
+        Product productFinal = productService.findOne(product.getId());
         verify(productRepository, times(1)).findById(product.getId());
         assertNotSame(product, productFinal);
     }
@@ -54,7 +54,7 @@ public class ProductoTest {
         Product product = new Product();
         product.setId(1L);
         when(productRepository.findById(product.getId())).thenReturn(Optional.empty());
-        Product productFinal = productService.getProduct(product.getId());
+        Product productFinal = productService.findOne(product.getId());
         verify(productRepository, times(1)).findById(product.getId());
         assertNull(productFinal);
     }
@@ -71,7 +71,7 @@ public class ProductoTest {
         productsList.add(product1);
         productsList.add(product2);
         when(productRepository.findAll()).thenReturn(productsList);
-        Iterable<Product> heroesDtoListFinal = productService.findAll();
+        List<Product> heroesDtoListFinal = productService.findAll();
         verify(productRepository, times(1)).findAll();
         assertEquals(TRUE,productsList.equals(heroesDtoListFinal));
     }

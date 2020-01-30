@@ -2,11 +2,10 @@ package co.com.cidenet.hulkstore.service;
 
 import co.com.cidenet.hulkstore.entity.Order;
 import co.com.cidenet.hulkstore.entity.Product;
-import javax.validation.constraints.NotNull;
 
 import java.util.List;
 
-public interface OrderService {
+public interface InterfaceOrderService {
 
     Order findOrderById(Long id);
 
@@ -14,7 +13,7 @@ public interface OrderService {
 
     void deleteOrderById(Long id);
 
-    Iterable<Product> findProductByName(String term);
+    List<Product> findProductByName(String term);
 
-    @NotNull Iterable<Order> findAll();
+    List<Order> findAll();
 }

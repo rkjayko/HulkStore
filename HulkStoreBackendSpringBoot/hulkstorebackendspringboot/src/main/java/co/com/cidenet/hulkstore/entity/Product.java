@@ -9,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+
 @Entity
 @Table(name = "productos")
 public class Product implements Serializable {
@@ -34,17 +35,6 @@ public class Product implements Serializable {
     private String category;
 
     private static final long serialVersionUID = 1L;
-
-    public Product(Long id, @NotNull(message = "Nombre del producto es necesario.") String name, Integer price,String category , Integer quantity) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.category = category;
-        this.quantity = quantity;
-    }
-
-    public Product() {
-    }
 
     public Long getId() {
         return id;
