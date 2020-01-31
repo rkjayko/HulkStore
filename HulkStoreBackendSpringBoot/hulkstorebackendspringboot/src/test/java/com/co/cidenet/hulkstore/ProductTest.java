@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ProductoTest {
+public class ProductTest {
 
     @Mock
     InterfaceProductRepository productRepository;

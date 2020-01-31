@@ -95,5 +95,16 @@ public class Order implements Serializable {
     }
 
     private static final long serialVersionUID = 1L;
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", note='" + note + '\'' +
+                ", createAt=" + createAt +
+                ", items=" + items +
+                '}';
+    }
 }
 

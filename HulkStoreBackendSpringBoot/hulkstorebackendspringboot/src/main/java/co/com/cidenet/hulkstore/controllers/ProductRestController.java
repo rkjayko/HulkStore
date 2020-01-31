@@ -115,12 +115,12 @@ public class ProductRestController {
         }
         try {
             if (productService.validateQuantity(oldProduct,product)) {
+                productUpdated = productService.save(oldProduct);
             } else {
                 response.put(Constans.ERROR, "No hay suficiente stock en el inventario");
                 logger.error(response);
                 return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
             }
-            productUpdated = productService.save(oldProduct);
         } catch (DataAccessException e) {
             response.put(Constans.MESSAGE,Constans.MSG_ERROR_DATABASE);
             response.put(Constans.ERROR, Objects.requireNonNull(e.getMessage()).concat(": ").concat(e.getMostSpecificCause().getMessage()));
