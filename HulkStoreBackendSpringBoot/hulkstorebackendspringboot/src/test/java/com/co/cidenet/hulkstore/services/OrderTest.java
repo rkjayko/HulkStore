@@ -7,22 +7,19 @@ import co.com.cidenet.hulkstore.repository.OrderRepository;
 
 import co.com.cidenet.hulkstore.service.OrderServiceImplement;
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.junit.Test;
+import org.mockito.*;
+
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Optional;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 
 public class OrderTest {
-
-    private Order order;
 
     @Mock
     OrderRepository orderRepository;
@@ -39,12 +36,14 @@ public class OrderTest {
     public void createOrderTest() {
 
         Product productOne = new Product();
+        productOne.setId(1l);
         productOne.setName("marvel");
         productOne.setQuantity(30);
         productOne.setPrice(20);
         productOne.setCategory("marvel");
 
         Product productTwo = new Product();
+        productTwo.setId(2L);
         productTwo.setName("marvel");
         productTwo.setQuantity(30);
         productTwo.setPrice(50);
@@ -52,6 +51,8 @@ public class OrderTest {
 
         ItemOrder itemOrder = new ItemOrder();
         ItemOrder itemOrder2 = new ItemOrder();
+        itemOrder.setId(1L);
+        itemOrder2.setId(2L);
         itemOrder.setProduct(productOne);
         itemOrder2.setProduct(productTwo);
         itemOrder.setQuantity(20);
@@ -61,6 +62,7 @@ public class OrderTest {
 
         //crear objeto de orden
         Order orderOne = new Order();
+        orderOne.setId(1L);
         Date myObj = new Date();
         orderOne.setCreateAt(myObj);
         orderOne.setDescription("se hace efecto de prueba");
@@ -70,18 +72,98 @@ public class OrderTest {
         items.add(itemOrder2);
         orderOne.setItems(items);
 
-        Order orderTwo = new Order();
-        Date myObj1 = new Date();
-        orderTwo.setCreateAt(myObj1);
-        orderTwo.setDescription("se hace efecto de prueba");
-        orderTwo.setNote("comida");
-        ArrayList<ItemOrder> itemsTwo = new ArrayList<>();
-        itemsTwo.add(itemOrder);
-        itemsTwo.add(itemOrder2);
-        orderTwo.setItems(itemsTwo);
+        when(orderRepository.save(any(Order.class))).thenReturn(orderOne);
+        Order orderTest = orderService.saveOrder(orderOne);
+        verify(orderRepository, times(1)).save(orderOne);
+        assertNotNull(orderTest);
+    }
 
-        System.out.print(orderOne.toString());
-        assertThat(orderOne.toString(), equalTo(orderTwo.toString()));
+    public void findOrderByIdOrderNoExistTest() {
+        Product productOne = new Product();
+        productOne.setId(1l);
+        productOne.setName("marvel");
+        productOne.setQuantity(30);
+        productOne.setPrice(20);
+        productOne.setCategory("marvel");
+
+        Product productTwo = new Product();
+        productTwo.setId(2L);
+        productTwo.setName("marvel");
+        productTwo.setQuantity(30);
+        productTwo.setPrice(50);
+        productTwo.setCategory("marvel");
+
+        ItemOrder itemOrder = new ItemOrder();
+        ItemOrder itemOrder2 = new ItemOrder();
+        itemOrder.setId(1L);
+        itemOrder2.setId(2L);
+        itemOrder.setProduct(productOne);
+        itemOrder2.setProduct(productTwo);
+        itemOrder.setQuantity(20);
+        itemOrder2.setQuantity(20);
+        itemOrder.setId(1L);
+        itemOrder2.setId(1L);
+
+        //crear objeto de orden
+        Order orderOne = new Order();
+        orderOne.setId(1L);
+        Date myObj = new Date();
+        orderOne.setCreateAt(myObj);
+        orderOne.setDescription("se hace efecto de prueba");
+        orderOne.setNote("comida");
+        ArrayList<ItemOrder> items = new ArrayList<>();
+        items.add(itemOrder);
+        items.add(itemOrder2);
+        orderOne.setItems(items);
+
+        when(orderRepository.findById(orderOne.getId())).thenReturn(Optional.ofNullable(null));
+        Order orderTest= orderService.findOrderById(orderOne.getId());
+        verify(orderRepository, times(1)).findById(orderOne.getId());
+        assertNull(orderTest);
+    }
+
+    @Test
+    public void findOrderByIdOrderExistTest() {
+        Product productOne = new Product();
+        productOne.setId(1l);
+        productOne.setName("marvel");
+        productOne.setQuantity(30);
+        productOne.setPrice(20);
+        productOne.setCategory("marvel");
+
+        Product productTwo = new Product();
+        productTwo.setId(2L);
+        productTwo.setName("marvel");
+        productTwo.setQuantity(30);
+        productTwo.setPrice(50);
+        productTwo.setCategory("marvel");
+
+        ItemOrder itemOrder = new ItemOrder();
+        ItemOrder itemOrder2 = new ItemOrder();
+        itemOrder.setId(1L);
+        itemOrder2.setId(2L);
+        itemOrder.setProduct(productOne);
+        itemOrder2.setProduct(productTwo);
+        itemOrder.setQuantity(20);
+        itemOrder2.setQuantity(20);
+        itemOrder.setId(1L);
+        itemOrder2.setId(1L);
+
+        //crear objeto de orden
+        Order orderOne = new Order();
+        orderOne.setId(1L);
+        Date myObj = new Date();
+        orderOne.setCreateAt(myObj);
+        orderOne.setDescription("se hace efecto de prueba");
+        orderOne.setNote("comida");
+        ArrayList<ItemOrder> items = new ArrayList<>();
+        items.add(itemOrder);
+        items.add(itemOrder2);
+        orderOne.setItems(items);
+        when(orderRepository.findById(orderOne.getId())).thenReturn(Optional.of(orderOne));
+        Order orderTest = orderService.findOrderById(orderOne.getId());
+        verify(orderRepository, times(1)).findById(orderOne.getId());
+        assertEquals(orderOne, orderTest);
     }
 
     @Test

@@ -24,6 +24,12 @@ public class OrderServiceImplement implements InterfaceOrderService {
     @Autowired
     private InterfaceProductService productService;
 
+    public OrderServiceImplement(OrderRepository orderRepository, ProductRepository productRepository, InterfaceProductService productService) {
+        this.orderRepository = orderRepository;
+        this.productRepository = productRepository;
+        this.productService = productService;
+    }
+
     @Override
     @Transactional(readOnly = true)
     public Order findOrderById(Long id) {

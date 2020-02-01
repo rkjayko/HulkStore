@@ -17,6 +17,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -151,16 +152,16 @@ public class ProductTest {
         productService.save(productOne);
     }
 
-    @Test
-    public void getQuantity() {
-        Product productOne = new Product();
-        productOne.setName("marvel");
-        productOne.setQuantity(30);
-        productOne.setPrice(20);
-        productOne.setCategory("marvel");
-        int quantity = 30;
-        int getQuantity = productOne.getQuantity();
-        assertEquals(quantity,getQuantity);
+
+    public void createProductPriceInvalidTest(){
+        Product productTest = new Product();
+        productTest.setId(1L);
+        productTest.setName("Product");
+        productTest.setQuantity(100);
+        productTest.setPrice(-1000);
+        productTest.setCategory("Marvel");
+
+        productService.save(productTest);
     }
 }
 

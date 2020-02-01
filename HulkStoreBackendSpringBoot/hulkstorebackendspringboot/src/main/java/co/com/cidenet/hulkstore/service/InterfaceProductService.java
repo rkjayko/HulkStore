@@ -13,4 +13,5 @@ public interface InterfaceProductService {
     void deleteProduct(Long id);
     boolean validateQuantity(Product oldProduct, Product product);
     Object listErrors(BindingResult result);
+    boolean validatePrice(Product product);
 }

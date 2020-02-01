@@ -19,6 +19,10 @@ public class ProductServiceImplement implements InterfaceProductService {
     @Autowired
     private ProductRepository productRepository;
 
+    public ProductServiceImplement(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
     @Override
     @Transactional(readOnly = true)
     public List<Product> findAll() {
@@ -55,7 +59,7 @@ public class ProductServiceImplement implements InterfaceProductService {
             return true;
         }
         else{
-            return false;
+            throw new IllegalArgumentException("La cantidad no es valida");
         }
     }
 
@@ -64,5 +68,12 @@ public class ProductServiceImplement implements InterfaceProductService {
                 .stream()
                 .map(err -> "El campo '" + err.getField() + "' " + err.getDefaultMessage())
                 .collect(Collectors.toList());
+    }
+
+    public boolean validatePrice(Product product){
+        if (product.getPrice() < 0) {
+            throw new IllegalArgumentException("El producto no tiene precio válido");
+        }
+        return true;
     }
 }

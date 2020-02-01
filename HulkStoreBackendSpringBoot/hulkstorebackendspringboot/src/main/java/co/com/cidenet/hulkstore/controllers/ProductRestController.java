@@ -83,6 +83,7 @@ public class ProductRestController {
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
         try {
+            productService.validatePrice(product);
             newProduct = productService.save(product);
         } catch (DataAccessException e) {
             response.put(Constans.MESSAGE,Constans.MSG_ERROR_DATABASE);
