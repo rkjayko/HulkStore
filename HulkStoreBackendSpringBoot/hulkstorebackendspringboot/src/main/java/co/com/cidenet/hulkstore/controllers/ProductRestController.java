@@ -55,7 +55,7 @@ public class ProductRestController {
         Product product;
         Map<String, Object> response = new HashMap<>();
         try {
-            product = productService.findOne(id);
+            product = productService.findOneProduct(id);
         } catch (DataAccessException e) {
             response.put(Constans.MESSAGE, HttpStatus.INTERNAL_SERVER_ERROR);
             response.put(Constans.ERROR, Objects.requireNonNull(e.getMessage()).concat(": ").concat(e.getMostSpecificCause().getMessage()));
@@ -99,7 +99,7 @@ public class ProductRestController {
     /*UPDATE DE PRODUCTO, SE VERIFICA SI NO EXISTE EL ID O SI HAY CONEXION A LA BASE O SI NO HAY STOCK, DE LO CONTRARIO ACTUALIZA */
     @PutMapping("/productos/{id}")
     public ResponseEntity<Map<String, Object>> update(@Valid @RequestBody Product product, BindingResult result, @PathVariable Long id) {
-        Product oldProduct = productService.findOne(id);
+        Product oldProduct = productService.findOneProduct(id);
         Product productUpdated;
         Map<String, Object> response = new HashMap<>();
         if (result.hasErrors()) {

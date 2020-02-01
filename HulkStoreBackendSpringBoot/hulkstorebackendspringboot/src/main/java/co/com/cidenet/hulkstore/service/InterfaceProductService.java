@@ -9,7 +9,7 @@ public interface InterfaceProductService {
 
     List<Product> findAll();
     Product save(Product product);
-    Product findOne(Long id);
+    Product findOneProduct(Long id);
     void deleteProduct(Long id);
     boolean validateQuantity(Product oldProduct, Product product);
     Object listErrors(BindingResult result);

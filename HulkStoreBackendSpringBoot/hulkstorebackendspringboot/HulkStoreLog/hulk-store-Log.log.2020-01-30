@@ -1,0 +1,448 @@
+2020-01-30 09:22:34 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 09:22:34 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 09:22:58 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 09:22:58 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@71486e21
+2020-01-30 09:23:00 INFO  ProductRestController:145 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@2ffd8084}
+2020-01-30 09:23:00 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 09:23:00 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 09:49:43 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 09:49:43 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 09:49:52 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 09:49:52 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 09:49:54 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 09:49:54 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@489b52a2
+2020-01-30 09:50:57 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 09:50:57 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 09:51:10 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 09:51:10 INFO  ProductRestController:100 - {product=co.com.cidenet.hulkstore.entity.Product@1e9b1229, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 09:53:44 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 09:53:44 INFO  ProductRestController:100 - {product=co.com.cidenet.hulkstore.entity.Product@12f1929c, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 09:54:00 INFO  ProductRestController:145 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@28b0885d}
+2020-01-30 09:54:06 ERROR ProductRestController:116 - {ERROR=[El campo 'quantity' El numero debe de ser positivo]}
+2020-01-30 09:55:09 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 09:55:09 INFO  ProductRestController:100 - {product=co.com.cidenet.hulkstore.entity.Product@932c96b, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 09:55:21 INFO  ProductRestController:145 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@58801bfc}
+2020-01-30 09:55:27 ERROR ProductRestController:133 - {ERROR=No hay suficiente stock en el inventario}
+2020-01-30 09:57:13 ERROR ProductRestController:122 - {ERROR=no se pudo editar, el ID del producto: 3 No existe en la base de datos }
+2020-01-30 09:57:24 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 09:57:24 INFO  ProductRestController:100 - {product=co.com.cidenet.hulkstore.entity.Product@789a0159, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 09:57:36 INFO  ProductRestController:141 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@3faa0383}
+2020-01-30 09:57:41 ERROR ProductRestController:129 - {ERROR=No hay suficiente stock en el inventario}
+2020-01-30 10:39:24 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 10:39:24 INFO  ProductRestController:100 - {product=co.com.cidenet.hulkstore.entity.Product@60d7dbc4, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 11:56:09 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 11:56:09 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 11:59:54 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 11:59:54 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 12:03:42 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 12:03:42 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 12:20:25 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 12:20:25 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 12:22:46 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 12:22:46 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 12:26:17 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 12:26:17 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 12:26:36 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 12:26:36 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 12:55:25 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 12:55:25 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 13:26:04 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:26:04 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:26:07 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:07 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:07 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:07 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:08 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:08 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:09 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:09 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:09 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:09 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:09 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:26:09 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:26:12 INFO  OrderRestController:112 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@21df32fd}
+2020-01-30 13:26:12 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:26:13 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:26:26 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:26:26 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:26:33 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 13:26:33 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 13:26:54 INFO  OrderRestController:112 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@9777f46}
+2020-01-30 13:27:07 INFO  OrderRestController:112 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@13756d9e}
+2020-01-30 13:27:13 INFO  OrderRestController:119 - inicia ejecución para mostrar las facturas
+2020-01-30 13:27:13 INFO  OrderRestController:130 - se ha mostrado con exito la lista de facturas
+2020-01-30 13:27:46 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@41717db7}
+2020-01-30 13:28:43 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@2877d475}
+2020-01-30 13:30:17 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@18acaab0}
+2020-01-30 13:30:38 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@57dce8d6}
+2020-01-30 13:30:51 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:30:51 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:34:27 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@78a729fc}
+2020-01-30 13:34:33 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:34:34 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:34:35 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:34:35 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:34:36 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:34:36 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:34:49 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@6b02a564}
+2020-01-30 13:34:54 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:34:54 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:56:58 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@62d208a3}
+2020-01-30 13:57:10 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:57:10 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:57:14 INFO  OrderRestController:120 - inicia ejecución para mostrar las facturas
+2020-01-30 13:57:14 INFO  OrderRestController:131 - se ha mostrado con exito la lista de facturas
+2020-01-30 13:57:31 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:57:31 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:57:33 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 13:57:33 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@8876972
+2020-01-30 13:57:38 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@70b84237}
+2020-01-30 13:57:38 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:57:38 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:57:49 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:49 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:49 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:49 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:49 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:49 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:49 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:49 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:51 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:51 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:51 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:51 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:51 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:51 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:51 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:51 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:52 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:52 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:53 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:53 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:53 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:53 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:54 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:54 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:54 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:54 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:54 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:54 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:55 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:55 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:56 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:56 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:57:57 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 13:57:57 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 13:58:02 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@532da40a}
+2020-01-30 13:58:03 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:58:03 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 13:59:51 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 13:59:51 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:00:00 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:00 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:01 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:01 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:05 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@5439406f}
+2020-01-30 14:00:05 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:00:05 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:00:16 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:16 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:17 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:17 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:20 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@3c31ad86}
+2020-01-30 14:00:20 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:00:20 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:00:30 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:30 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:31 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:00:31 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:00:33 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@1d1feb4f}
+2020-01-30 14:00:33 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:00:33 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:01:04 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:01:04 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@6cf45b97
+2020-01-30 14:01:07 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@1814f17b}
+2020-01-30 14:01:07 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:01:07 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:01:09 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:01:09 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@158d55fc
+2020-01-30 14:01:14 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@331917cc}
+2020-01-30 14:01:14 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:01:14 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:01:28 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:01:28 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:01:29 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:01:29 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:01:34 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@663fe6cb}
+2020-01-30 14:01:34 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:01:34 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:01:44 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:01:44 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:01:45 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:01:45 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:01:49 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@10fa76d1}
+2020-01-30 14:01:49 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:01:49 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:01:51 INFO  OrderRestController:120 - inicia ejecución para mostrar las facturas
+2020-01-30 14:01:51 INFO  OrderRestController:131 - se ha mostrado con exito la lista de facturas
+2020-01-30 14:02:04 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:02:04 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:02:07 INFO  OrderRestController:120 - inicia ejecución para mostrar las facturas
+2020-01-30 14:02:07 INFO  OrderRestController:131 - se ha mostrado con exito la lista de facturas
+2020-01-30 14:02:11 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:02:11 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:02:15 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:02:15 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:02:15 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:02:15 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:02:18 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:02:18 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:02:19 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:02:19 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:02:24 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@3d68f0cf}
+2020-01-30 14:02:24 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:02:24 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:09:58 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@24b6e1bc}
+2020-01-30 14:13:57 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:13:57 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:14:03 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:14:03 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@29fb25cb
+2020-01-30 14:14:06 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@b9c6120}
+2020-01-30 14:14:06 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:14:06 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:14:08 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:14:08 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@3c206711
+2020-01-30 14:14:10 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@5260bba7}
+2020-01-30 14:14:10 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:14:10 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:14:16 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:16 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:17 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:17 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:21 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@1c198ac6}
+2020-01-30 14:14:21 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:14:21 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:14:30 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:30 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:31 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:31 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:41 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@365d8f4c}
+2020-01-30 14:14:41 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:14:41 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:14:47 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:47 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:48 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:48 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:49 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:49 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:50 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:14:50 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:14:56 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@4a7256d1}
+2020-01-30 14:14:56 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:14:56 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:18:10 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:18:10 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:18:11 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:18:11 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:18:12 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:18:12 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:18:13 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:18:13 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:18:18 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@6f12abdf}
+2020-01-30 14:18:18 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:18:18 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:22:35 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:22:35 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:22:39 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:22:39 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:22:40 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:22:40 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:22:41 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:22:41 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:22:41 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:22:41 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:22:45 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@393213df}
+2020-01-30 14:22:45 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:22:45 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:25:21 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:25:21 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:25:21 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:25:21 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:25:22 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:25:22 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:25:23 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:25:23 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:25:23 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:25:23 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:25:26 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@745bb51d}
+2020-01-30 14:25:26 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:25:26 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:26:03 INFO  ProductRestController:78 - inicia ejecución para crear el producto
+2020-01-30 14:28:12 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:28:13 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:28:15 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:16 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:16 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:16 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:16 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:16 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:17 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:17 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:17 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:17 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:21 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:21 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:22 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:22 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:42 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:28:42 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:28:44 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:28:44 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@463581b2
+2020-01-30 14:28:46 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@381c2ee3}
+2020-01-30 14:28:47 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:28:47 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:28:48 INFO  ProductRestController:55 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:28:48 INFO  ProductRestController:71 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@2184e66e
+2020-01-30 14:28:50 INFO  ProductRestController:133 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@2fff48c4}
+2020-01-30 14:28:50 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:28:50 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:28:55 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:55 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:55 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:28:55 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:28:59 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@6cafb8e2}
+2020-01-30 14:28:59 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:28:59 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:29:04 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:04 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:29:05 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:05 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:29:10 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:29:10 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:29:32 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:32 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:29:32 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:32 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:29:38 INFO  OrderRestController:113 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@7d2b1d4b}
+2020-01-30 14:29:38 INFO  ProductRestController:37 - inicia ejecución para mostrar los productos
+2020-01-30 14:29:38 INFO  ProductRestController:48 - se ha mostrado con exito la lista de productos
+2020-01-30 14:29:54 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:54 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:29:55 INFO  OrderRestController:74 - Se busca el producto por el nombre
+2020-01-30 14:29:55 INFO  OrderRestController:85 - se ha mostrado con exito el producto buscado
+2020-01-30 14:38:37 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:38:37 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:38:41 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:38:41 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:38:42 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:38:42 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:38:45 INFO  OrderRestController:109 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@40fa1efb}
+2020-01-30 14:38:45 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:38:45 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:38:48 INFO  OrderRestController:116 - inicia ejecución para mostrar las facturas
+2020-01-30 14:38:48 INFO  OrderRestController:127 - se ha mostrado con exito la lista de facturas
+2020-01-30 14:43:30 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:43:30 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:43:34 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:34 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:35 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:35 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:37 INFO  OrderRestController:109 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@618a2dea}
+2020-01-30 14:43:37 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:43:37 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:43:46 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:46 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:47 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:47 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:48 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:48 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:49 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 14:43:49 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 14:43:52 INFO  OrderRestController:109 - {FELICIDADES=La factura ha sido creado con éxito!, OK=co.com.cidenet.hulkstore.entity.Order@35ca3eb3}
+2020-01-30 14:43:52 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:43:52 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:57:13 INFO  ProductRestController:54 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 14:57:13 INFO  ProductRestController:70 - se ha mostrado con exitoco.com.cidenet.hulkstore.entity.Product@7c766d63
+2020-01-30 14:57:17 INFO  ProductRestController:132 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=co.com.cidenet.hulkstore.entity.Product@2e828740}
+2020-01-30 14:57:17 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 14:57:17 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 14:57:49 INFO  ProductRestController:77 - inicia ejecución para crear el producto
+2020-01-30 17:20:44 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 17:20:44 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 17:20:46 INFO  OrderRestController:116 - inicia ejecución para mostrar las facturas
+2020-01-30 17:20:46 INFO  OrderRestController:127 - se ha mostrado con exito la lista de facturas
+2020-01-30 17:20:51 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 17:20:51 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 17:20:52 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 17:20:52 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 17:20:54 INFO  OrderRestController:109 - {FELICIDADES=La factura ha sido creado con éxito!, OK=Order{id=3, description='21312', note='213', createAt=Thu Jan 30 17:20:54 COT 2020, items=[ItemOrder{id=4, quantity=3, product=Product{id=1, name='Panasonic Pantalla LCD', price=259990, quantity=20, category='Marvel'}}]}}
+2020-01-30 17:20:54 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 17:20:54 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:47:35 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:47:35 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:48:04 INFO  ProductRestController:77 - inicia ejecución para crear el producto
+2020-01-30 18:48:04 INFO  ProductRestController:95 - {product=Product{id=3, name='Reloj Neris', price=30000, quantity=32, category='Marvel'}, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 18:48:04 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:48:04 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:48:18 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:18 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:18 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:18 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:19 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:19 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:19 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:19 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:19 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:19 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:21 INFO  OrderRestController:72 - Se busca el producto por el nombre
+2020-01-30 18:48:21 INFO  OrderRestController:83 - se ha mostrado con exito el producto buscado
+2020-01-30 18:48:27 INFO  OrderRestController:109 - {FELICIDADES=La factura ha sido creado con éxito!, OK=Order{id=4, description='Pedido reloj', note='Nota', createAt=Thu Jan 30 18:48:27 COT 2020, items=[ItemOrder{id=5, quantity=30, product=Product{id=3, name='Reloj Neris', price=30000, quantity=32, category='Marvel'}}]}}
+2020-01-30 18:48:27 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:48:27 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:48:31 INFO  OrderRestController:116 - inicia ejecución para mostrar las facturas
+2020-01-30 18:48:31 INFO  OrderRestController:127 - se ha mostrado con exito la lista de facturas
+2020-01-30 18:48:42 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:48:42 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:48:43 INFO  ProductRestController:54 - inicia ejecución para mostrar el producto seleccionado
+2020-01-30 18:48:43 INFO  ProductRestController:70 - se ha mostrado con exitoProduct{id=3, name='Reloj Neris', price=30000, quantity=2, category='Marvel'}
+2020-01-30 18:48:46 INFO  ProductRestController:132 - {FELICIDADES=La cantidad ha sido actualizada con exito, producto=Product{id=3, name='Reloj Neris', price=30000, quantity=34, category='Marvel'}}
+2020-01-30 18:48:46 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:48:46 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:48:54 INFO  ProductRestController:139 - inicia ejecución para eliminar el producto
+2020-01-30 18:48:54 ERROR ProductRestController:146 - {ERROR=Error al eliminar el producto de la base de datos, error=could not execute statement; SQL [n/a]; constraint ["FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement: Violación de una restricción de Integridad Referencial: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"
+Referential integrity constraint violation: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]}
+2020-01-30 18:49:13 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:49:13 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:49:16 INFO  ProductRestController:139 - inicia ejecución para eliminar el producto
+2020-01-30 18:49:16 ERROR ProductRestController:146 - {ERROR=Error al eliminar el producto de la base de datos, error=could not execute statement; SQL [n/a]; constraint ["FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement: Violación de una restricción de Integridad Referencial: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"
+Referential integrity constraint violation: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]}
+2020-01-30 18:49:27 INFO  ProductRestController:139 - inicia ejecución para eliminar el producto
+2020-01-30 18:49:27 ERROR ProductRestController:146 - {ERROR=Error al eliminar el producto de la base de datos, error=could not execute statement; SQL [n/a]; constraint ["FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (2)"; SQL statement:
+delete from productos where id=? [23503-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement: Violación de una restricción de Integridad Referencial: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (2)"
+Referential integrity constraint violation: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (2)"; SQL statement:
+delete from productos where id=? [23503-200]}
+2020-01-30 18:49:33 INFO  OrderRestController:116 - inicia ejecución para mostrar las facturas
+2020-01-30 18:49:33 INFO  OrderRestController:127 - se ha mostrado con exito la lista de facturas
+2020-01-30 18:49:38 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:49:38 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:52:27 INFO  ProductRestController:139 - inicia ejecución para eliminar el producto
+2020-01-30 18:52:27 ERROR ProductRestController:146 - {ERROR=Error al eliminar el producto de la base de datos, error=could not execute statement; SQL [n/a]; constraint ["FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement: Violación de una restricción de Integridad Referencial: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"
+Referential integrity constraint violation: "FKO9T7OTPIEYBIXKHUY08HAHXS5: PUBLIC.FACTURAS_ITEMS FOREIGN KEY(PRODUCT_ID) REFERENCES PUBLIC.PRODUCTOS(ID) (3)"; SQL statement:
+delete from productos where id=? [23503-200]}
+2020-01-30 18:54:29 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:54:29 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:54:37 INFO  ProductRestController:77 - inicia ejecución para crear el producto
+2020-01-30 18:54:37 INFO  ProductRestController:95 - {product=Product{id=3, name='erjoejro', price=32, quantity=232, category='Marvel'}, FELICIDADES=El producto ha sido creado con éxito!}
+2020-01-30 18:54:37 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:54:37 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:54:40 INFO  ProductRestController:139 - inicia ejecución para eliminar el producto
+2020-01-30 18:54:40 INFO  ProductRestController:150 - {FELICIDADES=El producto ha sido eliminado con éxito!}
+2020-01-30 18:58:31 INFO  ProductRestController:36 - inicia ejecución para mostrar los productos
+2020-01-30 18:58:31 INFO  ProductRestController:47 - se ha mostrado con exito la lista de productos
+2020-01-30 18:58:32 INFO  OrderRestController:116 - inicia ejecución para mostrar las facturas
+2020-01-30 18:58:32 INFO  OrderRestController:127 - se ha mostrado con exito la lista de facturas

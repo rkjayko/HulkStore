@@ -4,7 +4,7 @@ Created by : Jaime Mejia
 */
 
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.InterfaceProductRepository;
+import co.com.cidenet.hulkstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,16 +17,12 @@ import java.util.stream.Collectors;
 public class ProductServiceImplement implements InterfaceProductService {
 
     @Autowired
-    private final InterfaceProductRepository productDao;
-
-    public ProductServiceImplement(InterfaceProductRepository productDao) {
-        this.productDao = productDao;
-    }
+    private ProductRepository productRepository;
 
     @Override
     @Transactional(readOnly = true)
     public List<Product> findAll() {
-        return (List<Product>) productDao.findAll();
+        return (List<Product>) productRepository.findAll();
     }
 
     @Override
@@ -35,18 +31,18 @@ public class ProductServiceImplement implements InterfaceProductService {
         if(product.getQuantity() < 0){
             throw new IllegalArgumentException("La cantidad es negativa");
         }
-        return productDao.save(product);
+        return productRepository.save(product);
     }
 
     @Override
     @Transactional(readOnly = true)
-    public Product findOne(Long id) {
-        return productDao.findById(id).orElse(null);
+    public Product findOneProduct(Long id) {
+        return productRepository.findById(id).orElse(null);
     }
 
     @Override
     public void deleteProduct(Long id) {
-        productDao.deleteById(id);
+        productRepository.deleteById(id);
     }
 
     @Transactional(readOnly = true)

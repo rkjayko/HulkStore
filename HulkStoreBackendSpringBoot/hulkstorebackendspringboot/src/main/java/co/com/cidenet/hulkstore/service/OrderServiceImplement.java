@@ -3,8 +3,8 @@ package co.com.cidenet.hulkstore.service;
 import co.com.cidenet.hulkstore.entity.ItemOrder;
 import co.com.cidenet.hulkstore.entity.Order;
 import co.com.cidenet.hulkstore.entity.Product;
-import co.com.cidenet.hulkstore.repository.InterfaceOrderRepository;
-import co.com.cidenet.hulkstore.repository.InterfaceProductRepository;
+import co.com.cidenet.hulkstore.repository.OrderRepository;
+import co.com.cidenet.hulkstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,54 +16,48 @@ import java.util.stream.Collectors;
 @Service
 public class OrderServiceImplement implements InterfaceOrderService {
     @Autowired
-    private InterfaceOrderRepository orderDao;
+    private OrderRepository orderRepository;
 
     @Autowired
-    private InterfaceProductRepository productDao;
+    private ProductRepository productRepository;
 
     @Autowired
     private InterfaceProductService productService;
 
-    public OrderServiceImplement(InterfaceOrderRepository orderDao, InterfaceProductRepository productDao, InterfaceProductService productService) {
-        this.orderDao = orderDao;
-        this.productDao = productDao;
-        this.productService = productService;
-    }
-
     @Override
     @Transactional(readOnly = true)
     public Order findOrderById(Long id) {
-        return orderDao.findById(id).orElse(null);
+        return orderRepository.findById(id).orElse(null);
     }
 
     @Override
     @Transactional
     public Order saveOrder(Order order) {
-        return orderDao.save(order);
+        return orderRepository.save(order);
     }
 
     @Override
     @Transactional
     public void deleteOrderById(Long id) {
-        orderDao.deleteById(id);
+        orderRepository.deleteById(id);
     }
 
     @Override
     @Transactional(readOnly = true)
     public List<Product> findProductByName(String term) {
-        return productDao.findByNameContainingIgnoreCase(term);
+        return productRepository.findByNameContainingIgnoreCase(term);
     }
 
     @Override
     @Transactional(readOnly = true)
     public List<Order> findAll() {
-        return (List<Order>) orderDao.findAll();
+        return (List<Order>) orderRepository.findAll();
     }
 
     @Override
     public void updateQuantityProduct(Order order) {
         for (ItemOrder items : order.getItems()){
-            Product oldProduct = productService.findOne(items.getProduct().getId());
+            Product oldProduct = productService.findOneProduct(items.getProduct().getId());
             Integer getOldProductQuantity = oldProduct.getQuantity();
             Integer Amount =items.getQuantity();
             int updateQuantity = getOldProductQuantity - Amount;
